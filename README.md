@@ -8,6 +8,7 @@ Tasks To Do
 * Unit test each layer. Input, output and algorithm.
 * Jar command line, adding arguments for solving and output file name plus tidy up and checking arguments.
 * Look at converting 2 dimensional aleady here matrix into List<> with a look up to conserve memory adding scalability at the cost of performance.
+* Convert mixed indent to 2 space. Change IntelliJ project settings. 
 
 Busy Developer Technical Explanation
 ====================================
@@ -32,11 +33,8 @@ OUTPUT:
 
 Example file:  
 10 10
-
 1 1
-
 8 8
-
 1 1 1 1 1 1 1 1 1 1
 1 0 0 0 0 0 0 0 0 1
 1 0 1 0 1 1 1 1 1 1
