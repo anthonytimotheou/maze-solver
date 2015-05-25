@@ -46,7 +46,7 @@ Example file:
 
 OUTPUT:
 ##########
-#SXX     #
+\#SXX     #
 \# #X######
 \# #XX    #
 \# ##X# ###
