@@ -1,16 +1,17 @@
 # maze-solver
 This is a console program that attempts to solve a maze.
 
-STILL TO DO
+Tasks To Do
 ===========
 * Validating input to the program and communications between layers, all input is assumed sanitised already.
-* More appropriate exception hierarachy.
-* Jar command line, adding arguments for solving and output file name or console.
+* More appropriate exception hierarachy for each layer of abstraction. 
+* Unit test each layer. Input, output and algorithm.
+* Jar command line, adding arguments for solving and output file name plus tidy up and checking arguments.
 * Look at converting 2 dimensional aleady here matrix into List<> with a look up to conserve memory adding scalability at the cost of performance.
 
 Busy Developer Technical Explanation
 ====================================
-(explain 3 layers, input, solving, output)
+This program has three layers, input, output and solving. The input is responsible for reading the maze from any format into a Maze abstracted format. The solving layer is then applied using a strategy pattern to use the selected algorithm. The current implemented algorithm is a recursive divide and conquer method that chooses based on the Euclidean distance to the end point. Finally, the output layer is responsible for converting the solved maze into the correct output and outputting this to console. 
 
 Maze file format
 ================
@@ -31,8 +32,11 @@ OUTPUT:
 
 Example file:  
 10 10
+
 1 1
+
 8 8
+
 1 1 1 1 1 1 1 1 1 1
 1 0 0 0 0 0 0 0 0 1
 1 0 1 0 1 1 1 1 1 1
